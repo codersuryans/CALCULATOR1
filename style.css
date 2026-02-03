@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Page background */
+.container{
+    width:100%;
+    height:100vh;
+    background:#0f172a; /* deep dark blue */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Calculator body */
+.calculator{
+    background:#1e293b; /* dark slate */
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* All buttons */
+.calculator form input{
+    border:0;
+    outline:0;
+    width:60px;
+    height:60px;
+    border-radius:12px;
+    background:#334155;
+    box-shadow:
+        inset -2px -2px 6px rgba(255,255,255,0.05),
+        inset 2px 2px 6px rgba(0,0,0,0.5);
+    font-size:20px;
+    color:#f8fafc;
+    cursor:pointer;
+    margin:8px;
+    transition:0.2s ease;
+}
+
+/* Hover & active effects */
+.calculator form input:hover{
+    background:#475569;
+}
+
+.calculator form input:active{
+    transform:scale(0.95);
+}
+
+/* Display */
+.display{
+    display:flex;
+    margin:20px 0;
+}
+
+.display input{
+    flex:1;
+    height:80px;
+    background:#020617;
+    border-radius:12px;
+    text-align:right;
+    padding:10px;
+    font-size:40px;
+    color:#38bdf8;
+    box-shadow:inset 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* Operator buttons */
+.calculator form input.op{
+    color:#fbbf24;
+    font-weight:600;
+}
+
+/* AC & DEL */
+.calculator form input.action{
+    color:#22d3ee;
+    font-weight:600;
+}
+
+/* Equal button */
+.calculator form input.equal{
+    width:160px;
+    background:#f97316;
+    color:#fff;
+    font-weight:700;
+}
+
+.calculator form input.equal:hover{
+    background:#621790;
+}
+.header{
+    width:100%;
+     background:#0f172a;
+    border-bottom:1px solid rgba(255,255,255,0.08);    /* dark red bar */
+    padding:14px 0;
+}
+
+.h1{
+    background:none;        /* remove red from h1 */
+    text-align:center;
+    margin:0;
+    font-size:26px;
+    font-weight:800;
+    letter-spacing:3px;
+    color:#fbbf24;          /* golden text */
+    text-transform:uppercase;
+    text-shadow:
+        0 0 8px rgba(251,191,36,0.8),
+        0 0 20px rgba(251,191,36,0.6);
+}
